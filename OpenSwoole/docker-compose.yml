@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+    app:
+        build: ./22.0.0/php80
+        # build: ./22.0.0/php81
+        # build: ./22.0.0/php82
+        ports:
+            - 8080:8080
+        working_dir: /app
+        volumes:
+            - './app:/app'

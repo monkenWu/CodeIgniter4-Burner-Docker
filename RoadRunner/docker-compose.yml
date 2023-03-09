@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+    app:
+        image: webdevops/php:8.0-alpine
+        # image: webdevops/php:8.1-alpine
+        # image: webdevops/php:8.2-alpine
+        ports:
+            - 8080:8080
+        working_dir: /app
+        volumes:
+            - './app:/app'
